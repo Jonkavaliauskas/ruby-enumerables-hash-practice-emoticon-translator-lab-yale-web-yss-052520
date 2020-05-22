@@ -4,27 +4,14 @@
 
 require "yaml"
 require 'pry'
-# def load_library
-#   # code goes here	  
-#   emoticons = YAML.load_file('./lib/emoticons.yml')
-#   emoticons
-# end
-
-# def get_japanese_emoticon
-#   # code goes here
-# end
-
-# def get_english_meaning
-#   # code goes here
-# end
 
 def load_library(path)
   emoticons = YAML.load_file(path)
   emoticon_hash = {}
-  emoticon_hash["get_emoticon"] = Hash.new
-  emoticon_hash["get_meaning"] = Hash.new
+  emoticon_hash["get_emoticon"] = {}
+  emoticon_hash["get_meaning"] = {}
   for emoticon in emoticons.keys
-    emoticon_has[emoticon] = {:english => emoticons[emoticon][0], :japanese => emoticons[emoticon][1]}
+    emoticon_hash[emoticon] = {:english => emoticons[emoticon][0], :japanese => emoticons[emoticon][1]}
   end
   emoticon_hash
 end  
