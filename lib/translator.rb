@@ -49,7 +49,7 @@ end
 def get_english_meaning(path, emoticon)
   for emotion in emoticon_hash.keys
     if emoticon == emoticon_hash[emotion]
-      result = emoticon_hash[emotion][:english]
+      result = emoticon_hash[emotion]
     end 
     if result == nil
       result = "Sorry, that emoticon was not found" 
