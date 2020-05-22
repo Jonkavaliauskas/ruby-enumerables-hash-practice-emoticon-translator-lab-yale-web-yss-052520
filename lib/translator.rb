@@ -48,7 +48,7 @@ end
 
 def get_english_meaning(path, emoticon)
   for emotion in emoticon_hash.keys
-    if emoticon == emoticon_hash[emotion]
+    if emoticon == emoticon_hash[emotion][:japanese]
       result = emotion
     end 
     if result == nil
