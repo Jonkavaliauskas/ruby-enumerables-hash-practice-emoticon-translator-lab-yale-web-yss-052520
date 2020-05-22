@@ -32,7 +32,7 @@ def load_library(path)
   
   emoticons.each do |english_word, emoticonsymbol|
     emoticon_hash["get_emoticon"][0] = emoticonsymbol
-    emoticon_has["get_meaning"][1] = english_word
+    emoticon_hash["get_meaning"][1] = english_word
   end  
   emoticon_hash
 end
