@@ -26,7 +26,7 @@ def load_library(path)
   for emoticon in lib.keys
     emoticon_has[emoticon] = {:english => lib[emoticon][0], :japanese => lib[emoticon][1]}
   end
-  new_lib
+  emoticon_has
 end  
 
 
