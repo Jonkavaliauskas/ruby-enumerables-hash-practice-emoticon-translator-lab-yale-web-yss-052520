@@ -47,6 +47,7 @@ def get_japanese_emoticon(path, emoticon)
 end
 
 def get_english_meaning(path, emoticon)
+  emoticon_hash = load_library(path)
   for emotion in emoticon_hash.keys
     if emoticon == emoticon_hash[emotion][:japanese]
       result = emotion
