@@ -19,11 +19,11 @@ require 'pry'
 # end
 
 def load_library(path)
-  lib = YAML.load_file(path)
+  emoticons = YAML.load_file(path)
   emoticon_hash = {}
   emoticon_hash["get_emoticon"] = Hash.new
   emoticon_hash["get_meaning"] = Hash.new
-  for emoticon in lib.keys
+  for emoticon in emoticons.keys
     emoticon_has[emoticon] = {:english => lib[emoticon][0], :japanese => lib[emoticon][1]}
   end
   emoticon_hash
