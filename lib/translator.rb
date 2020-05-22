@@ -26,14 +26,10 @@ def load_library(path)
   # emoticons.each do |english_word, emoticon_set|
   #   emoticon_hash["get_emoticon"][emoticon_set.first] = emoticon_set.last
   #   emoticon_hash["get_meaning"][emoticon_set.last] = english_word
-  # for emoticon in emoticons.keys
-  #   emoticon_hash[emoticon] = {:english => emoticons[emoticon][0], :japanese => emoticons[emoticon][1]}
-  # end
+  for emoticon in emoticons.keys
+    emoticon_hash[emoticon] = {:english => emoticons[emoticon][0], :japanese => emoticons[emoticon][1]}
+  end
   
-  emoticons.each do |english_word, emoticonsymbol|
-    emoticon_hash["get_emoticon"][0] = emoticonsymbol
-    emoticon_hash["get_meaning"][1] = english_word
-  end  
   emoticon_hash
 end
 
