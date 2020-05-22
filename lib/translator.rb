@@ -28,8 +28,6 @@ def load_library(path)
   #   emoticon_hash["get_meaning"][emoticon_set.last] = english_word
   for emoticon in emoticons.keys
      emoticon_hash[emoticon] = {:english => emoticons[emoticon][0], :japanese => emoticons[emoticon][1]}
-  end   
-    
   end
   emoticon_hash
 end
