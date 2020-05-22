@@ -33,6 +33,7 @@ def load_library(path)
   emoticon_hash
 end
 
+def 
 
 def get_japanese_emoticon(path, emoticon)
   emoticon_hash = load_library(path)
