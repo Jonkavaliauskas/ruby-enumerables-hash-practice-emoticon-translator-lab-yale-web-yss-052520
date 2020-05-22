@@ -20,8 +20,8 @@ def load_library(path)
   emoticons = YAML.load_file(path)
   emoticon_hash = {}
 
-  emoticon_hash["get_emoticon"] = {}
-  emoticon_hash["get_meaning"] = {}
+  # emoticon_hash["get_emoticon"] = {}
+  # emoticon_hash["get_meaning"] = {}
 
   # emoticons.each do |english_word, emoticon_set|
   #   emoticon_hash["get_emoticon"][emoticon_set.first] = emoticon_set.last
